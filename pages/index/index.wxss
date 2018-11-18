@@ -1,0 +1,73 @@
+/**index.wxss**/
+.posts .post{
+  margin: 1.5rem 0;
+  position:relative;
+  overflow: hidden;
+  
+}
+
+.posts .post .title-box{
+  position:absolute;
+  left:0;
+  top:0;
+  height: 3rem;
+  width:632rpx;
+  padding: 8rpx 10rpx;
+  border-radius: 20rpx;
+  background: -webkit-linear-gradient(rgba(38,38,38,0.5), rgba(38,38,38,0)); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(rgba(38,38,38,0.5), rgba(38,38,38,0)); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(rgba(38,38,38,0.5), rgba(38,38,38,0)); /* Firefox 3.6 - 15 */
+  background: linear-gradient(rgba(38,38,38,0.5), rgba(38,38,38,0)); /* 标准的语法（必须放在最后） */
+}
+.posts .post .title{
+  color:white;
+  font-size:38rpx;
+  line-height: 64rpx;
+}
+.post-image{
+  border-radius: 20rpx;
+  width:650rpx;
+  height:450rpx;
+  box-shadow: 1rpx 1rpx 5rpx #ccc;
+}
+.bottom-view{
+  position:absolute;
+  left:400rpx;
+  top:380rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  width:300rpx;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.411);
+
+  border-radius:10rpx;
+}
+
+.bottom-view text{
+  display: inline-block;
+  margin:0;
+  color:white;
+  font-size:30rpx;
+  width:60rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  border:1rpx solid orange;
+}
+.seen-span,
+.good-span{
+  width:50rpx;
+  height:50rpx;
+  display: inline-block;
+  border:1rpx solid red;
+}
+.seen-span{
+  background: url(https://cloud-minapp-21319.cloud.ifanrusercontent.com/1gKnn4N5Hf8YHSxd.png) no-repeat center;
+  background-size:30rpx 30rpx;
+  padding-left:10rpx;
+}
+.good-span{
+  background: url(https://cloud-minapp-21319.cloud.ifanrusercontent.com/1gKnk9veaoEtcBew.png) no-repeat center;
+  background-size:26rpx 26rpx;
+  padding-left:20rpx;
+}

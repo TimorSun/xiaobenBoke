@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的博客",
+    "navigationBarTextStyle":"black"
+  },
+    "plugins": {
+      "sdkPlugin": {
+        "version": "1.9.1",
+        "provider": "wxc6b86e382a1e3294"
+      },
+      "wxparserPlugin": {
+        "version": "0.2.1",
+        "provider": "wx9d4d4ffa781ff3ac"
+      }
+    }
+}

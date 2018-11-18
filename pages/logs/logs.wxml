@@ -1,0 +1,22 @@
+<!--logs.wxml-->
+<view style="background:url({{titleImage}}) no-repeat center;background-size:100%;" class="title-image"></view>
+<view class="container">
+  <view class="post-title">{{post.title}}</view>
+  <view class="post-detial">
+    <wxparser rich-text="{{post.content}}" />
+  </view>
+    <view style="text-align:center;width:100%; margin:70rpx; ">
+    <view class="{{border_color}}" bindtap="changecolor" style=" position:relative; box-sizing:border-box;  border-radius:50%; width:120rpx; height:120rpx;margin:0 auto;background:url(https://cloud-minapp-21319.cloud.ifanrusercontent.com/1gIEdccFvKxw5073.png) no-repeat center;background-size:110rpx 110rpx;" >
+    <span style="position:absolute; left:100rpx; top:-12rpx; text-align:center; height:1rem; line-height:1rem; font-size:0.9rem; padding:16rpx; background:#fff; " class="{{fontcolor}}" >{{like_num}}</span>
+    
+        <image class="icon-image {{image_act}}" src="https://cloud-minapp-21319.cloud.ifanrusercontent.com/1gIEdeP9qHLfuyc9.png"  style=" width:110rpx;z-index:2; height:110rpx;" ></image>
+
+    </view>
+    <view style="text-align:center;font-size:0.8rem;margin-bottom:100rpx;">
+    <p>赞~赏小编鸡腿</p>
+    </view>
+    <view style="position:relative; width:100%; height:400rpx;text-align:center; ">
+      <image src="https://cloud-minapp-21319.cloud.ifanrusercontent.com/1gIEdVzTnmWKbemn.png" class="{{head_change}}" style=" opacity: 0; width:300rpx; height:240rpx; z-index:1; border: 1px solid bule;" ></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="posts">
+    <navigator wx:for="{{posts}}" wx:key="*this" url="/pages/logs/logs?article_id={{item.article_id}}&id={{item.id}}&good={{item.like_number}}&seen={{item.seen}}&index={{index}}">
+      <view  class="post">
+        <view class="title-box">
+          <view class="title">{{item.title}}</view>
+        </view>
+        <image class="post-image" src="{{item.cover}}"></image>
+        <view class="bottom-view">
+            <view class="seen-span"></view>
+            <text>{{item.seen}}</text>
+            <view class="good-span"></view>
+            <text>{{item.like_number}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

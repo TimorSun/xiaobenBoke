@@ -1,0 +1,104 @@
+.title-image{
+  width:100%;
+  height:400rpx;
+  background: #ccc;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+
+}
+.log-item {
+  margin: 10rpx;
+}
+.post-title .post-detial{
+  padding: 2rem;
+}
+.post-title {
+  font-size:1.2rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+.post-detial{
+  min-height: 2000rpx;
+
+}
+.wxParser-p{
+  line-height: 4rpx !important;
+  margin:1em 0 !important;
+  font-size:20rpx !important;
+
+}
+
+.borderorange{
+  border: 4rpx solid #f49234;
+}
+.bordergray{
+  border: 4rpx solid #d1cfcf;
+}
+.fontorange{
+  color:#f49234;
+}
+.fontgray{
+  color:#d1cfcf;
+}
+.imagemove{
+  position: absolute;
+  top:0rpx;
+  left:0rpx;
+  opacity:0;
+  animation-name: myfirst; /*动画的名称 */
+  animation-duration: 1s; /*动画从开始到结束的时间*/
+  animation-timing-function: ease-in-out; /*动画执行快慢的参数*/
+  /*animation-iteration-count: infinite;*/ /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  /*-webkit-animation-iteration-count: infinite;*/
+}
+.headbig{
+  position: absolute;
+  opacity: 0;
+  top:50%;
+  left:50%;
+  margin-top:-150rpx;
+  margin-left:-150rpx;
+  animation-name: bighead; /*动画的名称 */
+  animation-duration: 0.5s; /*动画从开始到结束的时间*/
+  animation-delay:0.5s;
+  animation-timing-function: ease-out; /*动画执行快慢的参数*/
+  /*animation-iteration-count: infinite;*/ /*动画执行多少次的参数*//*以下是兼容ios所需，参数意义与上相同*/
+  -webkit-animation-name: bighead;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay:0.5s;
+  -webkit-animation-timing-function: ease-out;
+  /*-webkit-animation-iteration-count: infinite;*/
+}
+
+@keyframes myfirst
+{
+0%{top:0px;opacity:1;}
+30%{top: -40rpx;}  
+100%{ top:340rpx; opacity:1;}
+}
+
+@-webkit-keyframes myfirst
+{
+0%{top:0px;opacity:1;}
+30%{top: -40rpx;}  
+100%{ top:340rpx; opacity:1;}
+}
+@keyframes bighead
+{
+0%{transform:scale(1);opacity: 1;}
+50%{transform:scale(1.5);}  
+100%{ transform:scale(1);opacity: 1;}
+}
+
+@-webkit-keyframes bighead
+{
+0%{transform:scale(1);opacity: 1;}
+50%{transform:scale(1.5);}  
+100%{ transform:scale(1);opacity: 1;}
+}
